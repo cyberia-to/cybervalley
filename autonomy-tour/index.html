@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Autonomy Tour — Aug 26 · Cyber Valley Bali</title>
+<meta name="description" content="A day in the cloud forest, where machines run on sunlight and nobody asks permission. Aug 26, 10:00 — Organiq, Cyber Valley Bali. Hosted by a Cyberia co-founder." />
+<link rel="canonical" href="https://cybervalley.io/autonomy-tour/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Cyber Valley" />
+<meta property="og:url" content="https://cybervalley.io/autonomy-tour/" />
+<meta property="og:title" content="Autonomy Tour — Aug 26 · Cyber Valley Bali" />
+<meta property="og:description" content="A day in the cloud forest, where machines run on sunlight and nobody asks permission. Aug 26, 10:00 — Organiq, Cyber Valley Bali." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@cyberiacap" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,12 88,82 12,82" fill="none" stroke="%2300ff01" stroke-width="7"/></svg>' />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet" />
+<script
+    type="module"
+    src="/lytics/tracker/loader.js?v=2"
+    data-endpoint="/lytics"
+    data-domain="cybervalley.io"
+></script>
+<style>
+:root {
+  --cyber-black: #000000;
+  --cyber-dark: #0a0a0a;
+  --cyber-dim: #1a1a1a;
+  --cyber-muted: #333333;
+  --cyber-text: #e0e0e0;
+  --cyber-green: #00ff41;
+  --cyber-cyan: #00e5ff;
+  --cyber-orange: #ff6600;
+  --cyber-yellow: #ffd700;
+  --cyber-magenta: #ff00ff;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { background: var(--cyber-black); }
+body {
+  font-family: "Play", sans-serif;
+  background: var(--cyber-black);
+  color: var(--cyber-text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+
+.page-frame {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 20px 20px 60px;
+  animation: page-in 120ms cubic-bezier(0.2, 0, 0, 1);
+}
+@keyframes page-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-frame { animation: none; }
+  * { transition: none !important; }
+}
+
+/* top bar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #111;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #555;
+}
+.topbar a { text-decoration: none; }
+.topbar .brand { color: var(--cyber-green); font-weight: 700; }
+.topbar .home { color: #555; }
+.topbar .home:hover { color: #aaa; }
+
+/* hero */
+.event-hero {
+  position: relative;
+  padding: 64px 0 48px;
+  border-bottom: 1px solid #111;
+  overflow: hidden;
+}
+.event-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 0%, rgba(0, 255, 65, 0.06), transparent 70%);
+  pointer-events: none;
+}
+.hero-eyebrow {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--cyber-cyan);
+  margin-bottom: 16px;
+}
+.hero-title {
+  font-size: clamp(38px, 8vw, 72px);
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 1.05;
+  color: #fff;
+  text-shadow: 0 0 30px rgba(0, 255, 65, 0.25);
+}
+.hero-title .accent { color: var(--cyber-green); }
+.hero-sub {
+  margin-top: 18px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #b8c2cc;
+  max-width: 560px;
+}
+
+/* kpis */
+.totals-kpis {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 28px 0 8px;
+}
+.totals-kpi {
+  background: #050505;
+  border: 1px solid #1a1a1a;
+  border-radius: 2px;
+  padding: 16px 18px;
+}
+.totals-kpi-lab {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #555;
+  margin-bottom: 8px;
+}
+.totals-kpi-val {
+  font-size: clamp(18px, 3vw, 26px);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.15;
+  color: var(--cyber-green);
+}
+.totals-kpi-hint {
+  font-size: 11px;
+  color: #444;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 640px) {
+  .totals-kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+}
+
+/* section headers */
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 44px 0 18px;
+}
+.section-head h2 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #fff;
+}
+.section-head .rule {
+  flex: 1;
+  height: 1px;
+  background: #151515;
+}
+
+/* schedule */
+.sched { display: flex; flex-direction: column; gap: 8px; }
+.sched-row {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 14px;
+  align-items: stretch;
+  text-decoration: none;
+}
+.sched-time {
+  font-size: 13px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #888;
+  text-align: right;
+  padding-top: 15px;
+  letter-spacing: 1px;
+}
+.sched-card {
+  position: relative;
+  background: #050505;
+  border: 1px solid #1a1a1a;
+  border-left: 2px solid var(--row-c, var(--cyber-green));
+  border-radius: 2px;
+  padding: 14px 16px;
+  transition: border-color 0.15s, background 0.15s;
+  overflow: hidden;
+}
+.sched-row:hover .sched-card {
+  border-color: color-mix(in srgb, var(--row-c) 55%, #1a1a1a);
+  background: #070707;
+}
+.sched-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: var(--dur, 30%);
+  background: var(--row-c, var(--cyber-green));
+  opacity: 0.55;
+}
+.sched-name {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.sched-name .tag {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: var(--row-c);
+  margin-left: 10px;
+}
+.sched-desc {
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #7a848e;
+}
+
+/* rsvp — join the telegram group */
+.rsvp-dock {
+  background: #050505;
+  border: 1px solid #1a1a1a;
+  border-radius: 2px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+.tg-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #000;
+  text-decoration: none;
+  background: var(--cyber-green);
+  border: 1px solid var(--cyber-green);
+  padding: 12px 22px;
+  border-radius: 2px;
+  box-shadow: 0 0 14px rgba(0, 255, 65, 0.35);
+  transition: all 0.15s;
+  font-family: "Play", sans-serif;
+}
+.tg-btn:hover { box-shadow: 0 0 22px rgba(0, 255, 65, 0.55); }
+.tg-btn:focus-visible,
+.sched-row:focus-visible .sched-card {
+  outline: 2px solid var(--cyber-cyan);
+  outline-offset: 2px;
+}
+.tg-hint {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #7a848e;
+  letter-spacing: 0.5px;
+  max-width: 520px;
+}
+.tg-hint b { color: #b8c2cc; font-weight: 400; }
+
+/* footer / cta */
+.cta-dock {
+  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  background: #050505;
+  border: 1px solid #1a1a1a;
+  border-radius: 2px;
+  padding: 20px;
+}
+.cta-note {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 520px) {
+  .page-frame { padding: 14px 12px 48px; }
+
+  .topbar { font-size: 10px; letter-spacing: 1.5px; }
+
+  .event-hero { padding: 40px 0 32px; }
+  .hero-title { letter-spacing: 2px; }
+  .hero-eyebrow { letter-spacing: 2.5px; font-size: 10px; }
+  .hero-sub { font-size: 13px; }
+
+  .totals-kpis {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    margin: 20px 0 4px;
+  }
+  .totals-kpi { padding: 12px 10px; }
+  .totals-kpi-lab { font-size: 9px; letter-spacing: 1.5px; margin-bottom: 5px; }
+  .totals-kpi-val { font-size: 15px; }
+  .totals-kpi-hint { font-size: 9px; margin-top: 5px; }
+
+  .section-head { margin: 32px 0 14px; flex-wrap: wrap; }
+  .section-head h2 { font-size: 12px; letter-spacing: 2px; }
+
+  .sched { gap: 6px; }
+  .sched-row { grid-template-columns: 46px 1fr; gap: 8px; }
+  .sched-time { font-size: 12px; padding-top: 13px; letter-spacing: 0.5px; }
+  .sched-card { padding: 12px 12px; }
+  .sched-name { font-size: 13px; letter-spacing: 0.5px; }
+  .sched-name .tag { margin-left: 6px; font-size: 9px; letter-spacing: 1px; }
+  .sched-desc { font-size: 11px; margin-top: 4px; }
+
+  .rsvp-dock { padding: 16px 14px; gap: 10px; }
+  .tg-btn { width: 100%; justify-content: center; font-size: 12px; letter-spacing: 1.5px; padding: 14px 18px; }
+  .tg-hint { font-size: 11px; }
+
+  .cta-dock { padding: 14px 12px; margin-top: 32px; }
+  .cta-note { font-size: 11px; }
+
+  .motto { margin-top: 28px; font-size: 10px; letter-spacing: 3px; }
+}
+
+.motto {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #333;
+}
+.motto span { color: var(--cyber-green); }
+</style>
+</head>
+<body>
+<div class="page-frame">
+
+  <div class="topbar">
+    <a href="/" class="home"><span class="brand">CYBER VALLEY</span> · BALI</a>
+    <span>AUTONOMY TOUR · AUG 26</span>
+  </div>
+
+  <section class="event-hero">
+    <div class="hero-eyebrow">AUG 26 · 10:00 · ORGANIQ</div>
+    <h1 class="hero-title">AUTONOMY<br><span class="accent">TOUR</span></h1>
+    <p class="hero-sub">A day in the cloud forest, where machines run on sunlight
+    and nobody asks permission. Tea, talks, the canyon —
+    and a first city quietly growing between the trees.
+    Hosted by a Cyberia co-founder.</p>
+  </section>
+
+  <div class="totals-kpis">
+    <div class="totals-kpi">
+      <div class="totals-kpi-lab">DATE</div>
+      <div class="totals-kpi-val">AUG 26</div>
+      <div class="totals-kpi-hint">Wednesday, 2026</div>
+    </div>
+    <div class="totals-kpi">
+      <div class="totals-kpi-lab">START</div>
+      <div class="totals-kpi-val">10:00</div>
+      <div class="totals-kpi-hint">till the stars come out</div>
+    </div>
+    <div class="totals-kpi">
+      <div class="totals-kpi-lab">LOCATION</div>
+      <div class="totals-kpi-val">ORGANIQ</div>
+      <div class="totals-kpi-hint">Cyber Valley Bali</div>
+    </div>
+  </div>
+
+  <div class="section-head">
+    <h2>SCHEDULE</h2>
+    <div class="rule"></div>
+  </div>
+
+  <div class="sched">
+    <div class="sched-row" style="--row-c: var(--cyber-green); --dur: 12.5%;">
+      <div class="sched-time">10:00</div>
+      <div class="sched-card">
+        <div class="sched-name">GATHERING<span class="tag">1H</span></div>
+        <div class="sched-desc">Welcome tea &amp; introductions — meet the residents</div>
+      </div>
+    </div>
+
+    <div class="sched-row" style="--row-c: var(--cyber-green); --dur: 12.5%;">
+      <div class="sched-time">11:00</div>
+      <div class="sched-card">
+        <div class="sched-name">INCEPTION<span class="tag">1H</span></div>
+        <div class="sched-desc">Opening session — where the autonomy begins</div>
+      </div>
+    </div>
+
+    <div class="sched-row" style="--row-c: var(--cyber-orange); --dur: 12.5%;">
+      <div class="sched-time">12:00</div>
+      <div class="sched-card">
+        <div class="sched-name">LUNCH<span class="tag">1H</span></div>
+        <div class="sched-desc">Farm-to-table, grown on this land</div>
+      </div>
+    </div>
+
+    <div class="sched-row" style="--row-c: var(--cyber-cyan); --dur: 12.5%;">
+      <div class="sched-time">13:00</div>
+      <div class="sched-card">
+        <div class="sched-name">FREE TIME<span class="tag">1H</span></div>
+        <div class="sched-desc">Explore the land</div>
+      </div>
+    </div>
+
+    <div class="sched-row" style="--row-c: var(--cyber-green); --dur: 12.5%;">
+      <div class="sched-time">14:00</div>
+      <div class="sched-card">
+        <div class="sched-name">CYBERIA: FIRST CITY &amp; CITIZENS<span class="tag">1H</span></div>
+        <div class="sched-desc">Presentation by the co-founder</div>
+      </div>
+    </div>
+
+    <div class="sched-row" style="--row-c: var(--cyber-cyan); --dur: 25%;">
+      <div class="sched-time">15:00</div>
+      <div class="sched-card">
+        <div class="sched-name">FREE TIME<span class="tag">2H</span></div>
+        <div class="sched-desc">Walks, talks, the canyon</div>
+      </div>
+    </div>
+
+    <div class="sched-row" style="--row-c: var(--cyber-orange); --dur: 12.5%;">
+      <div class="sched-time">17:00</div>
+      <div class="sched-card">
+        <div class="sched-name">DINNER<span class="tag">1H</span></div>
+        <div class="sched-desc">Shared table at golden hour</div>
+      </div>
+    </div>
+
+    <div class="sched-row" style="--row-c: var(--cyber-magenta); --dur: 25%;">
+      <div class="sched-time">18:00</div>
+      <div class="sched-card">
+        <div class="sched-name">SUNSET PARTY<span class="tag">OPEN END</span></div>
+        <div class="sched-desc">Music till the stars come out</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-head">
+    <h2>I'M COMING</h2>
+    <div class="rule"></div>
+  </div>
+
+  <div class="rsvp-dock">
+    <a class="tg-btn" href="https://t.me/cyberbali" target="_blank" rel="noopener">
+      JOIN CYBERIA ON TELEGRAM →
+    </a>
+    <div class="tg-hint">
+      Say <b>"I'm coming to the Autonomy Tour"</b> in the group.
+      The host will greet you and share the pin location a day before.
+    </div>
+  </div>
+
+  <div class="cta-dock">
+    <div class="cta-note">Hosted by a Cyberia co-founder.<br>Organiq · Cyber Valley Bali · Aug 26, 10:00</div>
+  </div>
+
+  <div class="motto">DON'T TRUST <span>·</span> DON'T FEAR <span>·</span> DON'T BEG</div>
+
+</div>
+</body>
+</html>
