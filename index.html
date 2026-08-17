@@ -107,13 +107,6 @@
     .prose p + p { margin-top: 14px; }
     .prose b { color: #e0ece5; font-weight: 400; }
 
-    .sec {
-        font-size: 11px;
-        letter-spacing: 4px;
-        color: var(--dim);
-        margin-bottom: 16px;
-    }
-
     /* north star */
     .northstar { margin-bottom: 64px; }
     .northstar h2 {
@@ -133,16 +126,6 @@
         border: 1px solid var(--line);
         border-radius: 4px;
     }
-
-    /* principles */
-    .principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 64px; }
-    .pcard {
-        border: 1px solid var(--line);
-        border-radius: 4px;
-        padding: 16px;
-    }
-    .pcard .ph { font-size: 13px; font-weight: 700; color: var(--leaf); letter-spacing: 1px; margin-bottom: 8px; }
-    .pcard .pt { font-size: 13px; color: #93a89c; line-height: 1.55; }
 
     /* CTAs */
     .ctas { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 64px; }
@@ -176,7 +159,6 @@
     .dot { color: #14241c; }
 
     @media (max-width: 620px) {
-        .principles { grid-template-columns: 1fr; }
         .ctas { grid-template-columns: 1fr; }
         .northstar h2 { letter-spacing: 0; }
     }
@@ -244,22 +226,6 @@
             <span class="t">OPEN THE MAP →</span>
             <span class="s">the land, plot by plot</span>
         </a>
-    </div>
-
-    <div class="sec">THREE PRINCIPLES</div>
-    <div class="principles">
-        <div class="pcard">
-            <div class="ph">LANDSCAPE IS CAPITAL</div>
-            <div class="pt">Not inventory. Nearly half the estate — agroforestry and cloud forest — is never sold. It is the engine that prices everything else.</div>
-        </div>
-        <div class="pcard">
-            <div class="ph">INFRASTRUCTURE STAYS</div>
-            <div class="pt">Roads, water, energy, connectivity — operations can be delegated; ownership never leaves the city.</div>
-        </div>
-        <div class="pcard">
-            <div class="ph">SCARCITY BY DISCIPLINE</div>
-            <div class="pt">Each wave of land is capped, the curve is public, and the best land sells last — at the highest price.</div>
-        </div>
     </div>
 
     <div class="ctas">
