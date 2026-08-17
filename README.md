@@ -4,13 +4,19 @@ Site sources. Hosting is GitHub Pages out of this repo
 (`cyberia-to/cybervalley`, branch `main`): deploy is `git push` — no
 server and no SSH anywhere in the publishing loop.
 
+Live at <https://cyberia-to.github.io/cybervalley/>. The custom domain
+is off until cybervalley.io DNS points at Pages — the A records are
+`185.199.108.153`, `185.199.109.153`, `185.199.110.153`,
+`185.199.111.153`, plus `CNAME www → cyberia-to.github.io.`. To switch,
+restore a `CNAME` file holding `cybervalley.io` and set the domain in
+the repo's Pages settings; GitHub then issues the certificate.
+
 ## layout
 
 ```
 cybervalley/
-├── index.html                  # https://cybervalley.io/
-├── autonomy-tour/index.html    # https://cybervalley.io/autonomy-tour/
-├── CNAME                       # custom domain for Pages
+├── index.html                  # site root
+├── autonomy-tour/index.html    # /autonomy-tour/ — the Aug 26 event
 └── README.md                   # this file
 ```
 
@@ -29,7 +35,7 @@ Publish:
 
 ```sh
 git add -A && git commit -m 'feat: ...' && git push
-# live on https://cybervalley.io/ within a minute
+# live within a minute
 ```
 
 ## analytics
