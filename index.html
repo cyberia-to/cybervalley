@@ -145,7 +145,7 @@
     .pcard .pt { font-size: 13px; color: #93a89c; line-height: 1.55; }
 
     /* CTAs */
-    .ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 64px; }
+    .ctas { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 64px; }
     .cta {
         display: flex;
         flex-direction: column;
@@ -177,6 +177,7 @@
 
     @media (max-width: 620px) {
         .principles { grid-template-columns: 1fr; }
+        .ctas { grid-template-columns: 1fr; }
         .northstar h2 { letter-spacing: 0; }
     }
 </style>
