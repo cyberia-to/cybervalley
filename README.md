@@ -1,7 +1,7 @@
 # cybervalley.io
 
 Исходники сайта. Хостинг — GitHub Pages из этого репо
-(`saint-Joy/cybervalley`, ветка `main`): деплой = `git push`,
+(`cyberia-to/cybervalley`, ветка `main`): деплой = `git push`,
 серверов и SSH в цикле публикации нет.
 
 ## структура
