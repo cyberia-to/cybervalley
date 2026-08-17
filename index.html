@@ -11,8 +11,10 @@
 <meta property="og:url" content="https://cybervalley.io/" />
 <meta property="og:title" content="Cyber Valley — autonomous genesis city in the heart of Bali" />
 <meta property="og:description" content="37 hectares at the foot of Sanghyang volcano — the first city of Cyberia. Visit, stay, settle, belong." />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@cyberiacap" />
+<meta property="og:image" content="https://cybervalley.io/valley-poster.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@cybervalleyland" />
+<meta name="twitter:image" content="https://cybervalley.io/valley-poster.jpg" />
 <meta name="theme-color" content="#020604" />
 <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,12 88,82 12,82" fill="none" stroke="%2300ff01" stroke-width="7"/></svg>' />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -112,23 +114,24 @@
         margin-bottom: 16px;
     }
 
-    /* ladder */
-    .ladder { border-top: 1px solid var(--line); margin-bottom: 64px; }
-    .rung {
-        display: flex;
-        align-items: baseline;
-        gap: 18px;
-        padding: 15px 4px;
-        border-bottom: 1px solid var(--line);
+    /* north star */
+    .northstar { margin-bottom: 64px; }
+    .northstar h2 {
+        font-size: clamp(38px, 9vw, 84px);
+        line-height: 1.02;
+        letter-spacing: -1px;
+        color: #fff;
+        margin-bottom: 22px;
     }
-    .rung .step {
-        font-size: clamp(14px, 2.4vw, 17px);
-        font-weight: 700;
-        color: var(--green);
-        min-width: 118px;
-        white-space: nowrap;
+    .northstar h2 .g { color: var(--green); }
+    .reel {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: #000;
+        border: 1px solid var(--line);
+        border-radius: 4px;
     }
-    .rung .what { font-size: clamp(13px, 2.2vw, 15px); color: #9fb4a8; line-height: 1.45; }
 
     /* principles */
     .principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 64px; }
@@ -173,8 +176,7 @@
 
     @media (max-width: 620px) {
         .principles { grid-template-columns: 1fr; }
-        .rung { flex-direction: column; gap: 3px; }
-        .rung .step { min-width: 0; }
+        .northstar h2 { letter-spacing: 0; }
     }
 </style>
 </head>
@@ -221,28 +223,21 @@
         </p>
     </div>
 
-    <div class="sec">THE LADDER</div>
-    <div class="ladder">
-        <a class="rung" href="autonomy-tour/" style="text-decoration: none; color: inherit; display: flex;">
-            <span class="step">VISIT</span>
-            <span class="what">picnics, trails, waterfalls, sunrise over the volcano — hours that turn into stories · <b style="color: var(--green);">next: Autonomy Tour, Aug 26 →</b></span>
-        </a>
-        <div class="rung">
-            <span class="step">STAY</span>
-            <span class="what">glamping and the mountain hub — a night or two inside the cloud forest</span>
-        </div>
-        <div class="rung">
-            <span class="step">GATHER</span>
-            <span class="what">retreats, camps, markets, festivals — the platform where one event seeds a hundred returns</span>
-        </div>
-        <div class="rung">
-            <span class="step">LIVE</span>
-            <span class="what">the nomad hub — coliving, cowork, wellness, farm-to-table; a month that becomes a life</span>
-        </div>
-        <div class="rung">
-            <span class="step">SETTLE</span>
-            <span class="what">lease land, build on it, grow with the city — time-bound tenure on the rails that built Hong Kong</span>
-        </div>
+    <div class="northstar">
+        <h2>BALI<br /><span class="g">NORTH STAR</span></h2>
+        <!-- source particle: bafybeig3rvh5rub34yra2t73dln4re7aysifhsn3romvrnjvx2nocurl6a
+             (1920×1080, 49 MB) — re-encoded to 1280×720 for the web -->
+        <video
+            class="reel"
+            src="valley.mp4"
+            poster="valley-poster.jpg"
+            preload="metadata"
+            autoplay
+            muted
+            loop
+            playsinline
+            controls
+        ></video>
     </div>
 
     <div class="sec">THREE PRINCIPLES</div>
@@ -284,7 +279,9 @@
         <span>🏴</span>
         <span>city #1 of <a href="https://cyberia.to" target="_blank" rel="noopener">cyberia</a></span>
         <span class="dot">·</span>
-        <a href="https://x.com/cyberiacap" target="_blank" rel="noopener">@cyberiacap</a>
+        <a href="https://t.me/cybervalleyland" target="_blank" rel="noopener">telegram</a>
+        <span class="dot">·</span>
+        <a href="https://x.com/cybervalleyland" target="_blank" rel="noopener">x</a>
     </div>
 
 </div>
