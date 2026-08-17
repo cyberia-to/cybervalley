@@ -145,6 +145,9 @@ a { color: inherit; }
   line-height: 1.15;
   color: var(--cyber-green);
 }
+.kpi-link { display: block; text-decoration: none; }
+.kpi-link:hover { text-shadow: 0 0 16px rgba(0, 254, 0, 0.55); }
+.kpi-link .pin { font-size: 0.6em; margin-left: 6px; vertical-align: 2px; }
 .totals-kpi-hint {
   font-size: 11px;
   color: #444;
@@ -266,6 +269,7 @@ a { color: inherit; }
 }
 .tg-btn:hover { box-shadow: 0 0 22px rgba(0, 254, 0, 0.55); }
 .tg-btn:focus-visible,
+.kpi-link:focus-visible,
 .sched-row:focus-visible .sched-card {
   outline: 2px solid var(--cyber-cyan);
   outline-offset: 2px;
@@ -380,7 +384,12 @@ a { color: inherit; }
     </div>
     <div class="totals-kpi">
       <div class="totals-kpi-lab">LOCATION</div>
-      <div class="totals-kpi-val">ORGANIQ</div>
+      <a
+        class="totals-kpi-val kpi-link"
+        href="https://maps.app.goo.gl/96UmDtaFSDhMMbvE6"
+        target="_blank"
+        rel="noopener"
+      >ORGANIQ<span class="pin">↗</span></a>
       <div class="totals-kpi-hint">Cyber Valley Bali</div>
     </div>
   </div>
