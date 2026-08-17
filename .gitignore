@@ -1,4 +1,4 @@
 .DS_Store
-# ops-докам с реквизитами сервера не место в публичном Pages-репо
+# ops docs carrying server credentials stay out of a public Pages repo
 HANDOFF.md
 scripts/

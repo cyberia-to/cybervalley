@@ -1,47 +1,47 @@
 # cybervalley.io
 
-Исходники сайта. Хостинг — GitHub Pages из этого репо
-(`cyberia-to/cybervalley`, ветка `main`): деплой = `git push`,
-серверов и SSH в цикле публикации нет.
+Site sources. Hosting is GitHub Pages out of this repo
+(`cyberia-to/cybervalley`, branch `main`): deploy is `git push` — no
+server and no SSH anywhere in the publishing loop.
 
-## структура
+## layout
 
 ```
 cybervalley/
 ├── index.html                  # https://cybervalley.io/
 ├── autonomy-tour/index.html    # https://cybervalley.io/autonomy-tour/
-├── CNAME                       # кастомный домен для Pages
-└── README.md                   # этот файл
+├── CNAME                       # custom domain for Pages
+└── README.md                   # this file
 ```
 
-## как править
+## editing
 
-Просто редактируй HTML. Один файл на страницу, стили и скрипты внутри —
-никакого build-шага. Проверить локально:
+Edit the HTML. One file per page, styles and scripts inline — no build
+step. Check locally:
 
 ```sh
 cd ~/cyber/cybervalley
 python3 -m http.server 8080
-# открой http://localhost:8080/  и  http://localhost:8080/autonomy-tour/
+# open http://localhost:8080/  and  http://localhost:8080/autonomy-tour/
 ```
 
-Опубликовать:
+Publish:
 
 ```sh
 git add -A && git commit -m 'feat: ...' && git push
-# через ~минуту живо на https://cybervalley.io/
+# live on https://cybervalley.io/ within a minute
 ```
 
-## аналитика
+## analytics
 
-Трекер lytics грузится с `https://cyberstates.net/lytics/` — общий
-ingest на cyberproxy. Кросс-доменные запросы разрешает CORS-настройка
-ingest (`LYTICS_CORS_ORIGINS=https://cybervalley.io`); дашборд —
-<https://cyberstates.net/lytics/>. Исходники: `~/cyber/lytics`.
+The lytics tracker loads from `https://cyberstates.net/lytics/` — the
+shared ingest on cyberproxy. Cross-origin requests are allowed by the
+ingest CORS allowlist (`LYTICS_CORS_ORIGINS=https://cybervalley.io`);
+dashboard: <https://cyberstates.net/lytics/>. Sources: `~/cyber/lytics`.
 
-## RSVP на autonomy-tour
+## autonomy-tour RSVP
 
-Кнопка шлёт нотификацию напрямую в Telegram-бот из браузера
-(у api.telegram.org CORS `*`, сервер не нужен). Токен бота вписан
-в исходник страницы — так задумано: бот одноразовый, привязан к одному
-чату; при спаме — revoke через `@BotFather`.
+The button posts a notification straight to a Telegram bot from the
+browser (api.telegram.org sends CORS `*`, so no server is involved).
+The bot token sits in the page source by design: the bot is disposable
+and bound to one chat; revoke through `@BotFather` if it gets abused.
