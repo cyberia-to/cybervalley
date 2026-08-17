@@ -47,7 +47,6 @@ dashboard: <https://cyberstates.net/lytics/>. Sources: `~/cyber/lytics`.
 
 ## autonomy-tour RSVP
 
-The button posts a notification straight to a Telegram bot from the
-browser (api.telegram.org sends CORS `*`, so no server is involved).
-The bot token sits in the page source by design: the bot is disposable
-and bound to one chat; revoke through `@BotFather` if it gets abused.
+A plain link to the <https://t.me/cyberialand> group — new visitors say
+they are coming there and the host answers. No form, no bot, no token:
+the group is the guest list and the comms channel at once.
