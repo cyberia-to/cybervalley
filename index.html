@@ -64,6 +64,7 @@
     .brand .word b { color: var(--green); }
     .brand .crumb { margin-left: auto; font-size: 12px; color: var(--dim); text-decoration: none; letter-spacing: 1px; }
     .brand .crumb:hover { color: var(--mist); }
+    .brand .player { display: flex; flex: 1; min-width: 0; margin: 0 28px; }
 
     /* hero */
     .hero { margin-bottom: 26px; }
@@ -159,6 +160,8 @@
     .dot { color: #14241c; }
 
     @media (max-width: 620px) {
+        .brand { flex-wrap: wrap; }
+        .brand .player { order: 3; flex-basis: 100%; margin: 0; }
         .ctas { grid-template-columns: 1fr; }
         .northstar h2 { letter-spacing: 0; }
     }
@@ -172,6 +175,7 @@
             <polygon points="50,12 88,82 12,82" fill="none" stroke="#00fe00" stroke-width="7"/>
         </svg>
         <span class="word"><b>cyber</b> valley</span>
+        <div class="player" data-cyberia-player></div>
         <a class="crumb" href="https://cyberia.to" target="_blank" rel="noopener">A CYBERIA PROJECT ↗</a>
     </div>
 
@@ -257,5 +261,6 @@
     </div>
 
 </div>
+<script src="https://cyberia.to/player.js" defer></script>
 </body>
 </html>
